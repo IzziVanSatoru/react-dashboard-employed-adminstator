@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Home from "./Homekaryawan";
+import Home from "./k-home";
 
 export default function Ketidakhadirankaryawan() {
   const [status, setStatus] = useState("Pending");

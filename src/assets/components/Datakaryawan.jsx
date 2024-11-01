@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Home from "./Home";
+import Home from "./a-home";
 import Button from "./Button";
 
 export default function initialData() {

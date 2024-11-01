@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "./Homekaryawan";
+import Home from "./k-home";
 
 export default function Rekappresensi() {
   return (
