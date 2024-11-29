@@ -22,36 +22,36 @@ function Dashboard() {
   const date = now.toLocaleDateString("US", dateOptions);
 
   return (
-    <>
-      <div className="flex flex-row">
-        <Home />
-        <div className="mt-32 ml-32 flex flex-col">
-          <div className="bg-main text-text w-[1200px] p-10 border-border border-4 shadow-light rounded-lg ">
-            <h1 className="font-bold text-3xl mb-3">Hello, Admin!</h1>
-            <p className="font-bold text-xl mb-2">{clock}</p>
-            <p className="text-xl font-thin">{date}</p>
-          </div>
-          <div className="flex flex-row mt-10 space-x-4">
-            <div className="flex flex-col items-center justify-center w-56 flex-grow border-border border-4 shadow-light h-56 bg-[#F97316] rounded-lg">
-              <h1 className="font-bold text-xl mb-2">Jumlah Karyawan</h1>
-              <p className="font-base text-lg">4</p>
+    <div className="flex flex-row min-h-screen bg-white p-8">
+      <Home />
+      <div className="mt-20 ml-20 flex flex-col items-center w-full">
+        <div className="w-full max-w-5xl bg-white/20 backdrop-blur-lg p-10 rounded-lg shadow-2xl border border-cyan-200">
+          <h1 className="font-bold text-4xl mb-6 text-center text-gray-800">
+            Hello, Admin!
+          </h1>
+          <p className="font-bold text-2xl text-center mb-2">{clock}</p>
+          <p className="text-lg font-thin text-center mb-10">{date}</p>
+          <div className="flex flex-wrap justify-center gap-8">
+            <div className="flex flex-col items-center justify-center w-56 h-56 border border-cyan-200 bg-gradient-to-br from-orange-300 via-orange-400 to-orange-500 shadow-lg rounded-lg transition-all transform hover:-translate-y-2">
+              <h1 className="font-bold text-xl text-gray-900 mb-2">Jumlah Karyawan</h1>
+              <p className="font-medium text-lg text-gray-800">4</p>
             </div>
-            <div className="flex flex-col items-center justify-center w-56 flex-grow border-border border-4 shadow-light h-56 bg-[#3B82F6] rounded-lg">
-              <h1 className="font-bold text-xl mb-2">Hadir</h1>
-              <p className="font-base text-lg">3</p>
+            <div className="flex flex-col items-center justify-center w-56 h-56 border border-cyan-200 bg-gradient-to-br from-blue-300 via-blue-400 to-blue-500 shadow-lg rounded-lg transition-all transform hover:-translate-y-2">
+              <h1 className="font-bold text-xl text-gray-900 mb-2">Hadir</h1>
+              <p className="font-medium text-lg text-gray-800">3</p>
             </div>
-            <div className="flex flex-col items-center justify-center w-56 flex-grow border-border border-4 shadow-light h-56 bg-[#22C55E] rounded-lg">
-              <h1 className="font-bold text-xl mb-2">Alpa</h1>
-              <p className="font-base text-lg">0</p>
+            <div className="flex flex-col items-center justify-center w-56 h-56 border border-cyan-200 bg-gradient-to-br from-green-300 via-green-400 to-green-500 shadow-lg rounded-lg transition-all transform hover:-translate-y-2">
+              <h1 className="font-bold text-xl text-gray-900 mb-2">Alpa</h1>
+              <p className="font-medium text-lg text-gray-800">0</p>
             </div>
-            <div className="flex flex-col items-center justify-center w-56 flex-grow border-border border-4 shadow-light h-56 bg-[#A855F7] rounded-lg">
-              <h1 className="font-bold text-xl mb-2">Cuti/Izin/Sakit</h1>
-              <p className="font-base text-lg">1</p>
+            <div className="flex flex-col items-center justify-center w-56 h-56 border border-cyan-200 bg-gradient-to-br from-purple-300 via-purple-400 to-purple-500 shadow-lg rounded-lg transition-all transform hover:-translate-y-2">
+              <h1 className="font-bold text-xl text-gray-900 mb-2">Cuti/Izin/Sakit</h1>
+              <p className="font-medium text-lg text-gray-800">1</p>
             </div>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

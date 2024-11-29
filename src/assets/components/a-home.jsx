@@ -13,35 +13,35 @@ export default function Home() {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <div className="border-border flex flex-col border-4 ml-4 bg-main w-[20%] h-[900px] mt-7 justify-between shadow-light">
+    <div className="border-4 border-blue-200 flex flex-col ml-4 bg-white w-[20%] h-[900px] mt-7 justify-between shadow-lg rounded-lg">
       <div className="pt-16 flex justify-center flex-col">
         <Button
           onClick={() => handleNavigate("/admindashboard")}
-          className={`mb-10 text-center rounded-base shadow-light border font-extrabold text-2xl ml-10 border-border w-60 p-4 ${
-            isActive("/admindashboard") ? "bg-mainAccent" : "bg-bg text-text"
+          className={`mb-10 text-center rounded-lg shadow-lg font-bold text-xl ml-10 border-2 border-blue-200 w-60 p-4 ${
+            isActive("/admindashboard") ? "bg-blue-500 text-white" : "bg-blue-100 text-blue-700"
           }`}
         >
           Dashboard
         </Button>
         <Button
           onClick={() => handleNavigate("/datakaryawan")}
-          className={`mb-10 text-center rounded-base shadow-light border font-extrabold text-2xl border-border ml-10 p-4 w-60 ${
-            isActive("/datakaryawan") ? "bg-mainAccent" : "bg-bg text-text"
+          className={`mb-10 text-center rounded-lg shadow-lg font-bold text-xl ml-10 border-2 border-blue-200 w-60 p-4 ${
+            isActive("/datakaryawan") ? "bg-blue-500 text-white" : "bg-blue-100 text-blue-700"
           }`}
         >
           Data Karyawan
         </Button>
         <Button
           onClick={() => handleNavigate("/ketidakhadiran")}
-          className={`mb-10 text-center rounded-base shadow-light border font-extrabold text-2xl border-border ml-10 p-4 w-60 ${
-            isActive("/ketidakhadiran") ? "bg-mainAccent" : "bg-bg text-text"
+          className={`mb-10 text-center rounded-lg shadow-lg font-bold text-xl ml-10 border-2 border-blue-200 w-60 p-4 ${
+            isActive("/ketidakhadiran") ? "bg-blue-500 text-white" : "bg-blue-100 text-blue-700"
           }`}
         >
           Ketidak Hadiran
         </Button>
       </div>
-      <div className="flex text-lg ml-20 mb-10 cursor-pointer">
-        <img src="user.png" alt="" width="25" className="mr-2" />
+      <div className="flex text-lg ml-20 mb-10 cursor-pointer text-blue-700">
+        <img src="user.png" alt="User Icon" width="25" className="mr-2" />
         <p>admin</p>
       </div>
     </div>
