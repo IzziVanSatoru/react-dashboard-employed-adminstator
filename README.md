@@ -8,5 +8,5 @@
 - **3D Design Style:** A modern, eye-catching design with 3D effects.
 
 
-how to run
-npm run dev
+## how to run
+- using npm run dev
